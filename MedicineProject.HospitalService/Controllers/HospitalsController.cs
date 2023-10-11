@@ -15,7 +15,7 @@ namespace MedicineProject.Controllers
     {
         private readonly IHospitalService _service;
 
-        public HospitalsController(WebMobileContext context, IMapper mapper, IMemoryCache memoryCache, IHospitalService service) 
+        public HospitalsController(IHospitalService service) 
         {
             _service = service;
         }
