@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  medicineproject.hospitalservice:
+    image: ${DOCKER_REGISTRY-}medicineprojecthospitalservice
+    build:
+      context: .
+      dockerfile: MedicineProject.HospitalService/Dockerfile
